@@ -1,0 +1,70 @@
+cpu.dll plugin for LCD SMARTIE
+
+REQUIRES LCD Smartie 5.3 beta3 or newer
+
+
+
+INFORMATION
+-----------
+Simple CPU usage dll to get CPU time from windows perfomance counters
+
+
+Version 
+-------
+1.0
+
+
+Version Features
+----------------
+Four functions available to use.
+
+  function1
+  returns integer 0-100
+  
+  function2
+  returns returns value with two decimal digits
+  
+  function3
+  returns raw value
+  
+  function20
+  returns credits about the dll, version and other info.
+
+
+USAGE
+-----
+Simple as this: $dll(cput,1,,)
+
+
+ Examples
+  $dll(cput.dll,1,,) 
+  $dll(cput,2,,) 
+  $dll(cput,3,,)  
+
+
+Function 20 returns dll information regardless of the parameters just add $dll(cpu.dll,20,param1,param2) 
+and the credits screen will appear.
+
+
+
+    NOTE:  in all functions is available a short description of returned string that can be displayed by passing "about" as param1.
+    e.g. $dll(cput.dll,1,about,) or $dll(cput.dll,20,about,)  
+t
+
+
+
+
+
+CREDITS
+-------
+Creator: Limbo 
+Nikos Georgousis (Νίκος Γεωργούσης)
+
+2005-2023 
+.net Powered
+
+
+
+
+
+
